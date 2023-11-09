@@ -14,22 +14,45 @@ html {
 
 body {
   font-family: 'Familjen Grotesk', sans-serif;
-  background: #000;
+  background: #fff;
   color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  /* color: #fff; */
 }
 
 ul {
   list-style: none;
 }
 
+/* Logo Configuration */
+.logo-container{
+  display: flex;
+}
+
+.logo-name{
+  font-size: 0.7em;
+  margin-top: 6px;
+  color: rgb(255, 156, 0);
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Header/Navbar */
 .main-header {
   position: fixed;
+  height: 1000px;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,10 +63,11 @@ ul {
   text-transform: uppercase;
   height: 100px;
   padding: 0 30px;
+  background-color: #000;
 }
 
 /* Logo */
-.logo {
+/* .logo {
   width: 210px;
   height: auto;
 }
@@ -52,7 +76,7 @@ ul {
   display: block;
   width: 100%;
   height: auto;
-}
+} */
 
 /* Desktop Menu */
 .desktop-main-menu {
