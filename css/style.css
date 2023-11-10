@@ -15,6 +15,7 @@ html {
 body {
   font-family: 'Familjen Grotesk', sans-serif;
   background: rgb(23,23,23);
+  line-height: 1.6;
   /* color: #fff; */
 }
 
@@ -25,6 +26,20 @@ a {
 
 ul {
   list-style: none;
+}
+
+/* colour defination */
+:root{
+  --shadow: 0 .5rem 1rem rgb(0,0,0,.05);
+  --blue: #0D99FF;
+  --blue-light: #CFEBFF;
+  --blue-dark: #0A7ACC;
+  --background: rgba(0, 3, 3, 0.82);
+  --contact-color-hover: rgb(255, 130, 0);
+  --contact-color: rgb(255, 156, 0);
+
+  --rounded: .25rem;
+  --rounded-md: .5rem;
 }
 
 /* Logo Configuration */
@@ -139,16 +154,6 @@ ul {
 }
 
 
-/* Sections */
-/* section {
-  position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-transform: uppercase;
-  background: rgb(23,23,23);
-} */
-
 /* ******video configuration****** */
 .top-wrapper{
   margin-top: 80px;
@@ -232,7 +237,7 @@ video{
 
 .church-info ul .address{
   margin: 0;
-  padding-left: 28px;
+  padding-left: 26px;
   padding-bottom: 15px ;
   max-width: 90%;
 }
@@ -249,7 +254,7 @@ video{
 }
 
 .space{
-  padding-bottom: 15px ;
+  padding-bottom: 15px; 
 }
 
 .social-icons a:hover
@@ -267,8 +272,105 @@ video{
 	transition: transform 0.5s;
 }
 
+.contact{
+  background-image: linear-gradient(rgba(5, 3, 3, 0.9)50%,rgba(0,0,0,0.9)50%), url(./media-img/contact_cover.jpg);
+  background-position: center;
+  background-size: 50%;
+  border-radius: 0 0 20px 20px;
+}
 
+.contact .head{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0;
+    justify-content:left;
+    align-items:center ;
+}
 
+.contact h3{
+  color: rgb(255, 156, 0);
+}
+
+img{
+  width: 80px;
+}
+
+/* FORM STYLE */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label{
+  display: block;
+}
+
+.contact form .form-group{
+  margin: 0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width: 100%;
+  padding: 1em;
+  outline: none;
+  color: #fff;
+}
+
+.contact form input, .contact form textarea{
+  border: 1px solid var(--contact-color);
+  background-color: transparent;
+  transition: border 0.5s ease-in-out;
+}
+
+.contact form input, .contact form textarea{
+  border-radius: var(--rounded);
+  border: 1px solid var(--contact-color);
+  background-color: transparent;
+  transition: border 0.5s ease-in-out;
+}
+
+.contact form input:focus,
+.contact form textarea:focus{
+  border-color: var(--contact-color-hover); 
+}
+
+.contact form textarea{
+  resize: none;
+  overflow-y: auto;
+}
+
+.contact form label{
+  margin-bottom: 10px;
+  color: #fff;
+}
+  
+.contact form .btn-submit{
+  
+  background-color:var(--contact-color);
+  text-decoration: none;
+  border: none;
+  border-radius: var(--rounded-md);
+  width:210%;
+  padding: .5rem 0; 
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  display: grid;
+  font-size: 1em;
+  font-weight: 600;
+  place-items: center;
+}
+
+.contact form a:hover, .contact form a:focus{
+  background-color: var(--contact-color-hover);
+  outline: 0;
+  transition: background-color .8s ease-in-out;
+}
 /* Footer */
 footer {
   position: relative;
