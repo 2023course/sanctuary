@@ -21,7 +21,6 @@ body {
 
 a {
   text-decoration: none;
-  /* color: #fff; */
 }
 
 ul {
@@ -120,8 +119,7 @@ ul {
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translateX(6px);
-  background: #fff;
+  transform: rotate(45deg) translateY(18px) translateX(18px);
 }
 
 .open .hamburger-middle {
@@ -129,8 +127,7 @@ ul {
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translateX(-6px);
-  background: #fff;
+  transform: rotate(-45deg) translateY(18px) translateX(-18px);
 }
 
 /* Overlay */
@@ -177,7 +174,8 @@ ul {
 .top-content h1{
   font-size: 1em;
   color: rgb(255, 156, 0);
-  padding: 0 5px 0 5px;
+  padding: 0 15px 0 15px;
+  text-transform: uppercase;
 }
 
 .top-wrapper .video-container .top-video{
@@ -374,7 +372,7 @@ img{
 /* Footer */
 footer {
   position: relative;
-  padding: 20px 0;
+  padding: 35px 0;
   background-color: #000;
 }
 
@@ -387,7 +385,7 @@ footer .social-icons,.sign{
 
 footer .social-icons a{
   font-size: 20px;
-	margin: 0 20px 20px 20px;
+	margin: 0 15px 20px 15px;
   color: rgb(255, 156, 0);
 }
 
@@ -427,7 +425,7 @@ footer ul li a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  width: 350px;
+  width: 300px;
   height: 100%;
   background: #000;
   z-index: 4;
@@ -454,9 +452,9 @@ footer ul li a:hover {
 
 .mobile-main-menu ul li {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
-  border-bottom: 1.5px #555 dotted;
+  border-bottom: 1px rgb(255, 156, 0) dotted; /*#555 dotted; */
   width: 100%;
   text-align: right;
   padding-bottom: 8px;
@@ -473,44 +471,153 @@ footer ul li a:hover {
 
 /* Large Screen */
 @media screen and (min-width: 780px){
+  
+  /* logo desktop start */
+  .logo-name{
+    font-size: 1.1em;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  /* logo desktop end */
+  .top-content{
+    height: 100px;
+  }
+
+  .top-content h1{
+    font-size: 2em;
+  }
+
+  .top-wrapper{
+    background-image: none;
+  }
+  
+  .mobile-only{
+    display: none;
+  }
+  
+  
   /* Desktop Menu */
-.desktop-main-menu {
-  margin-right: 50px;
+  .desktop-main-menu {
+    margin-right: 50px;
+    display: block;
+  }
+
+  .desktop-main-menu ul {
+    display: flex;
+  }
+
+  .desktop-main-menu ul li {
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+  }
+
+  .desktop-main-menu ul li a{
+    color: rgb(255, 156, 0);
+  }
+
+  /* Menu item bottom border */
+  .desktop-main-menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(255, 156, 0);
+    transform: scaleX(0);
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: right center;
+  }
+
+  .desktop-main-menu ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition-duration: 0.4s;
+  }
+
+  .container .wrapper{
+    display: grid;
+    /* grid-template-columns: 1fr 2fr; */
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .container .church-info{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0,.9);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .church-info ul li{
+    font-size: 1em;
+  }
+  
+  .space{
+    padding-bottom: 20px ;
+  }
+  
+  .church-info ul li span{
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .church-info ul i{
+    color: rgb(255, 156, 0);
+    margin-right: 10px;
+  }
+  
+  .church-info ul .address{
+    margin: 0;
+    padding-left: 28px;
+    padding-bottom: 20px ;
+    max-width: 90%;
+  }
+
+  .church-info{
+    background-color: #000;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .contact{
+    border-radius: 0 20px 20px 0;
+  }
+
+  .contact .head{
+    margin-bottom: 30px;
 }
 
-.desktop-main-menu ul {
-  display: flex;
-}
+  .wrapper{
+    box-shadow: none;
+  }
 
-.desktop-main-menu ul li {
-  position: relative;
-  margin-right: 20px;
-  padding-bottom: 2px;
-}
+  .contact{
+    padding: 30px;
+  }
 
-.desktop-main-menu ul li a{
-  color: rgb(255, 156, 0);
-}
+  .social-box{
+    width: 100%;
+    margin-top: 40px;
+  }
 
-/* Menu item bottom border */
-.desktop-main-menu ul li a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: rgb(255, 156, 0);
-  transform: scaleX(0);
-  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  transform-origin: right center;
-}
+  .social-icons a{
+    font-size: 25px;
+  }
 
-.desktop-main-menu ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left center;
-  transition-duration: 0.4s;
-}
+  .cover{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.95)50%,rgba(0,0,0,.95)50%), url(../img/download.jpeg);
+  }
+  
+  video{
+    width: 80%;
+    margin: 0 25px 25px 25px;
+  }
 }
 
 
