@@ -469,8 +469,9 @@ footer ul li a:hover {
   color: #aaa;
 }
 
+
 /* Large Screen */
-@media screen and (min-width: 880px){
+@media screen and (min-width: 780px){
   
   /* logo desktop start */
   .logo-name{
