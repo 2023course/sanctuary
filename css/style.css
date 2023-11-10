@@ -470,7 +470,7 @@ footer ul li a:hover {
 }
 
 /* Large Screen */
-@media screen and (min-width: 780px){
+@media screen and (min-width: 880px){
   
   /* logo desktop start */
   .logo-name{
@@ -486,7 +486,7 @@ footer ul li a:hover {
   }
 
   .top-content h1{
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .top-wrapper{
