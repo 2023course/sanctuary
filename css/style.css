@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: 'Familjen Grotesk', sans-serif;
-  /* background: #fff; */
+  background: rgb(23,23,23);
   /* color: #fff; */
 }
 
@@ -140,16 +140,16 @@ ul {
 
 
 /* Sections */
-section {
+/* section {
   position: relative;
-  /* height: 100vh; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
-}
+  background: rgb(23,23,23);
+} */
 
-/* ************hero settings*********** */
+/* ******video configuration****** */
 .top-wrapper{
   margin-top: 80px;
   max-width: 1170px;
@@ -157,7 +157,7 @@ section {
   margin-right: auto;
   padding: 1em;
   margin-bottom: 40px;
-  background-image: linear-gradient(rgba(0,0,0,.95)50%,rgba(0,0,0,.95)50%), url(./media-img/download.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,.95)50%,rgba(0,0,0,.95)50%), url(../img/download.jpeg);
 }
 
 .top-content{
@@ -186,7 +186,86 @@ video{
   margin: 0 25px 25px 25px;
 }
 
+/* **********CONTACT SETTINGS********** */
+.container{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  margin-bottom: 40px;
+}
 
+.container .wrapper{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+  border-radius: 20px 20px 20px 20px;
+}
+
+.wrapper > *{
+  padding: 1.5em;
+}
+
+.church-info{
+  background-color: rgba(0, 0, 0,0.9);
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+}
+
+.church-info ul{
+  margin: 0 0 1rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.church-info ul li{
+  font-size: 14px;
+}
+
+.church-info ul li span{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.church-info ul i{
+  color: rgb(255, 156, 0);
+  margin-right: 10px;
+}
+
+.church-info ul .address{
+  margin: 0;
+  padding-left: 28px;
+  padding-bottom: 15px ;
+  max-width: 90%;
+}
+
+.church-info .social-box h3{
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: rgb(255, 156, 0);
+}
+
+.brand{
+  text-align: center;
+}
+
+.space{
+  padding-bottom: 15px ;
+}
+
+.social-icons a:hover
+{
+	transform: translateY(-4px);
+}
+
+.social-icons a
+{
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 20px;
+  color: rgb(255, 156, 0);
+	display: inline-block;
+	transition: transform 0.5s;
+}
 
 
 
