@@ -103,14 +103,19 @@ h2{
 button{
   width: 100%;
   height: 40px;
-  background: #fff;
+  background: rgb(255, 156, 0);
   border: none;
   outline: none;
   border-radius: 40px;
   cursor: pointer;
   font-size: 1em;
-  color: #000;
-  font-weight: 500;
+  color: #fff;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+}
+
+button:hover{
+  background: rgb(255, 136, 0);
 }
 
 .register-link{
