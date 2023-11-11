@@ -23,7 +23,7 @@ section{
   height: 450px;
   background: transparent;
   border-radius: 20px;
-  border: 2px solid rgba(225,225,225,.5);
+  border: 2px solid rgb(255, 156, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ section{
 
 h2{
   font-size: 2em;
-  color: #fff;
+  color: rgb(255, 156, 0);
   text-align: center;
 }
 
@@ -40,7 +40,7 @@ h2{
   position: relative;
   width: 310px;
   margin: 30px 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid rgb(255, 156, 0);
 }
 
 .input-box label{
@@ -73,7 +73,7 @@ h2{
 .input-box .icon{
   position: absolute;
   right: 8px;
-  color: #fff;
+  color:  rgb(255, 156, 0);
   font-size: 1.2em;
   line-height: 30px;
 }
@@ -88,10 +88,11 @@ h2{
 
 .remember-forgot label input{
   margin-right: 5px;
+  
 }
 
 .remember-forgot a{
-  color: #fff;
+  color:  rgb(255, 156, 0);
   text-transform: none;
 }
 
@@ -120,7 +121,7 @@ button{
 }
 
 .register-link p a{
-  color: #fff;
+  color:  rgb(255, 156, 0);
   text-decoration: none;
   font-weight: 600;
   padding-left: 5px;
@@ -130,7 +131,8 @@ button{
   text-decoration: underline;
 }
 
-@media (max-width: 360px){
+/* @media (max-width: 320px){ */
+  @media screen and (max-width: 400px){
   .login-box{
     width: 100%;
     height: 100vh;
