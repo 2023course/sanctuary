@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
 
-*{
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -100,7 +100,7 @@ h2{
   text-decoration: underline;
 }
 
-button{
+section button{
   width: 100%;
   height: 40px;
   background: rgb(255, 156, 0);
@@ -114,7 +114,7 @@ button{
   transition: ease-in-out 0.5s;
 }
 
-button:hover{
+section button:hover{
   background: rgb(255, 136, 0);
 }
 
@@ -134,7 +134,7 @@ button:hover{
 
 .register-link p a:hover{
   text-decoration: underline;
-}
+} 
 
 /* @media (max-width: 320px){ */
   @media screen and (max-width: 400px){
